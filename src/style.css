@@ -1,10 +1,67 @@
-main {
-    text-align: center
-}
-
-.card{
-    display: inline-block;
-    background-color: rgb(128, 223, 128);
+body {
+    background-image: url(https://images4.alphacoders.com/574/thumb-1920-574726.jpg);
+    background-attachment: fixed;
+    }
     
-
-}
+    .img-header{
+    border-radius: 15px;
+    width:100%;
+    }
+    
+    main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-inline: 20px;
+    margin-top: 50px;
+    
+    }
+    
+    .card {
+    background-color: rgb(168, 250, 176);
+    flex-basis: auto;
+    width: 240px;
+    height: 400px;
+    margin-block: 20px;
+    padding-inline: 20px;
+    border: 5px solid rgb(90, 173, 90);
+    border-radius: 5%;
+    }
+    
+    .image {
+    
+    flex-basis: auto;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10%;
+    }
+    
+    .nameOf {
+    font-family: 'Muli', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    }
+    
+    .info {
+    border-radius: 2%;
+    background-color: rgb(90, 173, 90);
+    width: 220px;
+    height: 120px;
+    padding-top: 10px;
+    padding-inline-end: 2px;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    border: 5px solid rgb(116, 190, 93);
+    
+    border-radius: 5%;
+    }
+    
+    p {
+    margin-inline-start: 20px;
+    margin-inline-end: 10px;
+    margin-top: 0%;
+    }
