@@ -16,7 +16,7 @@ body {
     align-content: flex-start;
     padding-left: 40px;
     padding-right: 40px;
-    margin-inline: 20px;
+    margin-inline: 30px;
     margin-top: 50px;
     
     }
@@ -33,7 +33,6 @@ body {
     }
     
     .image {
-    
     flex-basis: auto;
     margin-left: 25%;
     margin-right: 25%;
@@ -48,19 +47,18 @@ body {
     
     .info {
     border-radius: 2%;
-    background-color: rgb(90, 173, 90);
+    background-color: rgb(236, 228, 181, 0.5);
     width: 220px;
     height: 120px;
     padding-top: 10px;
     padding-inline-end: 2px;
-    font-family: 'Muli', sans-serif;
-    font-size: 16px;
-    border: 5px solid rgb(116, 190, 93);
-    
     border-radius: 5%;
     }
     
     p {
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    color: black;
     margin-inline-start: 20px;
     margin-inline-end: 10px;
     margin-top: 0%;
@@ -77,3 +75,98 @@ body {
         font-family: 'Muli', sans-serif;
         color: white;   
     }
+
+    .card {
+        flex-basis: auto;
+        width: 240px;
+        height: 400px;
+        margin-block: 20px;
+        padding-inline: 20px;
+        border-radius: 5%;
+    }
+    .cardFire{
+        background-color: rgb(248, 70, 70);
+        border: 5px solid rgb(247, 32, 32);
+
+    }
+    .cardWater{
+        background-color: rgb(95, 201, 201);
+        border: 5px solid rgb(86, 119, 179);
+    }
+
+    .cardGrass{
+        background-color: rgb(138, 211, 96);
+        flex-basis: auto;
+        width: 240px;
+        height: 400px;
+        margin-block: 20px;
+        padding-inline: 20px;
+        border: 5px solid rgb(47, 121, 13);
+        border-radius: 5%;
+    }
+
+    .cardBug{
+        background-color: rgb(124, 148, 17);
+        border: 5px solid rgb(26, 68, 7);
+    }
+
+    .cardNormal{
+        background-color: rgb(148, 151, 136);
+        border: 5px solid rgb(89, 92, 88);
+    }
+
+    .cardElectric{
+        background-color: rgb(222, 236, 24);
+        border: 5px solid rgb(240, 192, 36);
+    }
+
+    .cardPsychic{
+        background-color: rgb(240, 134, 178);
+        border: 5px solid rgb(243, 81, 108);
+    }
+
+    .cardPsychic{   
+        background-color: rgb(240, 134, 178);
+        border: 5px solid rgb(243, 81, 108);
+    }
+
+    .cardFighting{
+        background-color: rgb(247, 96, 26);
+        border: 5px solid rgb(247, 48, 34);
+    }
+
+    .cardRock{
+        background-color: rgb(182, 116, 18);
+        border: 5px solid rgb(185, 99, 19);
+    }
+
+    .cardGround{
+        background-color: rgb(255, 166, 0);
+        border: 5px solid rgb(141, 99, 8);
+    }
+
+    .cardBug{
+        background-color: rgb(101, 253, 81);
+        border: 5px solid rgb(65, 119, 20);
+    }
+
+    .cardPoison{
+        background-color: rgb(215, 47, 248);
+        border: 5px solid rgb(160, 10, 190);
+    }
+
+    .cardGhost{
+        background-color: rgb(75, 58, 221);
+        border: 5px solid rgb(53, 66, 143);
+    }
+
+    .cardIce{
+        background-color: rgb(113, 238, 238);
+        border: 5px solid rgb(73, 197, 206);
+    }
+
+    .cardDragon{
+        background-color: rgb(160, 54, 231);
+        border: 5px solid rgb(111, 22, 146);
+    }
+
