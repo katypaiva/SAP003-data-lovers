@@ -1,11 +1,16 @@
 const pokemonData = POKEMON.pokemon;
 const main = document.getElementById("content");
 const btnType = document.getElementById("btn-type");
+const btnOrder = document.getElementById("btn-order");
 
+btnOrder.addEventListener ("click", () => {
+  main.innerHTML = "";
+  template(sortData(pokemonData));   
+});
 
 btnType.addEventListener("change", () => {
   main.innerHTML = "";
-  template(filter.filterData(pokemonData, btnType.value))
+  template(app.filterData(pokemonData, btnType.value))
 });
 
 template(pokemonData);
