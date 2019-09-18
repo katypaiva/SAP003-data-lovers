@@ -1,7 +1,9 @@
 // esta é uma função de exemplo
 // veja como agregamos a função ao objeto global window
-function filterType(){
-  pokemonData.filter(typeOf => typeOf.type);
+function filterData(data, condition){
+  return data.filter(item => item.type.includes(condition));
 }
 
-  window.main = {filterType : filterType}
+const filter = {
+  filterData,
+}
