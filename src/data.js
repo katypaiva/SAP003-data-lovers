@@ -1,9 +1,15 @@
-// esta é uma função de exemplo
-// veja como agregamos a função ao objeto global window
 function filterData(data, condition){
   return data.filter(item => item.type.includes(condition));
 }
 
-const filter = {
-  filterData,
+
+function sortData (data){
+  return data.sort((a, b) =>{
+    return a.name.localeCompare(b.name);  
+  })
+}
+
+const app = {
+  filterData: filterData,
+  sortData: sortData,
 }
