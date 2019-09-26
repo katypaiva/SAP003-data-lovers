@@ -43,12 +43,12 @@ btnOrder.addEventListener("change", () => {
 btnType.addEventListener("change", () => {
   main.innerHTML = "";
   template(window.app.filterData(pokemonData, btnType.value)),
-  calc.innerHTML = `${window.app.computers(window.app.filterData(pokemonData, btnType.value))}% de 151`;
+    calc.innerHTML = `There are ${window.app.computers(window.app.filterData(pokemonData, btnType.value))}% ${btnType.value} type among 151 pokemons.`;
 });
 
 window.onload = () => {
-  menuTypes(pokemonData); 
-  template(pokemonData);  
+  menuTypes(pokemonData);
+  template(pokemonData);
 };
 
 function template(arr) {
@@ -57,13 +57,14 @@ function template(arr) {
     template += `
 <div class ="card"> 
 <img class="image" src="${poke.img}"/>
-<p class="nameOf"> ${poke.name}<p>
+<p class="nameOf"> ${poke.name.replace("(Male)", "").replace("(Female)", "")}<p>
 <div class="info card${poke.type[0]}">
 <p><strong>Pokedex:</strong> ${poke.id}</p>
 <p><strong>Type:</strong> ${poke.type.join(", ")}</p>
 <p><strong>Weaknesses:</strong> ${poke.weaknesses.join(", ")}</p>
 </div>
-</div>`;});
+</div>`;
+  });
 
   main.innerHTML += template;
 }

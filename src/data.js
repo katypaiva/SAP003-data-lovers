@@ -8,7 +8,8 @@ function filterName(data, condition) {
 
 function sortData(data, sortBy, sortOrder) {
   let orderAZ = (a, b) => {
-    return a[sortBy] > b[sortBy] ? 1 : a[sortBy] < b[sortBy] ? -1 : 0;};
+    return a[sortBy] > b[sortBy] ? 1 : a[sortBy] < b[sortBy] ? -1 : 0;
+  };
 
   if (sortOrder === "ascendingOrder") {
     return data.sort(orderAZ);
@@ -18,7 +19,7 @@ function sortData(data, sortBy, sortOrder) {
 }
 
 function computers(data) {
-  return ((data.length*100)/151).toFixed(1);
+  return ((data.length * 100) / 151).toFixed(1);
 }
 
 window.app = {
