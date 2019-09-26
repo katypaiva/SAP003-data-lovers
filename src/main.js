@@ -43,7 +43,7 @@ btnOrder.addEventListener("change", () => {
 btnType.addEventListener("change", () => {
   main.innerHTML = "";
   template(window.app.filterData(pokemonData, btnType.value)),
-  calc.innerHTML = `Existem ${window.app.computers(window.app.filterData(pokemonData, btnType.value))} pokemons do tipo ${btnType.value}`;
+  calc.innerHTML = `${window.app.computers(window.app.filterData(pokemonData, btnType.value))}% de 151`;
 });
 
 window.onload = () => {
