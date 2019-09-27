@@ -126,74 +126,70 @@ body {
 
     .cardFire {
         background-color: #FF0000;    
-        
     }
     .cardFlying {
-        background-color: rgb(95, 201, 201);
-
-
+        background-color: #4169E1;
     }
 
     .cardGrass {
-        background-color: rgb(138, 211, 96);
+        background-color: #32CD32;
     }
 
     .cardBug {
-        background-color: rgb(124, 148, 17);
+        background-color: #008000;
     }
 
     .cardNormal {
-        background-color: rgb(148, 151, 136);
+        background-color: #808080;
     }
 
     .cardElectric {
-        background-color: rgb(222, 236, 24);
+        background-color: #FFD700;
     }
 
     .cardPsychic {
-        background-color: rgb(240, 134, 178);
-
+        background-color: #DB7093;
     }
 
     .cardPsychic {   
-        background-color: rgb(243, 81, 108);
+        background-color: #FF1493;
     }
 
     .cardFighting {
-        background-color: rgb(247, 96, 26);
+        background-color: #ff681f;
     }
 
     .cardRock {
-        background-color: rgb(182, 116, 18);
+        background-color: #CD853F;
     }
 
     .cardGround {
-        background-color: rgb(255, 166, 0);
+        background-color: #DAA520;
     }
 
     .cardBug {
-        background-color: rgb(101, 253, 81);
+        background-color: #3CB371;
     }
 
     .cardPoison {
-        background-color:  rgb(160, 10, 190);
+        background-color: #8B008B;
     }
 
     .cardGhost {
-        background-color: rgb(75, 58, 221);
+        background-color: #0000FF;
     }
 
     .cardIce {
-        background-color: rgb(73, 197, 206);
+        background-color: #00BFFF;
 
     }
 
     .cardDragon {
-        background-color: rgb(160, 54, 231);
+        background-color: #BA55D3;
 
     }
 
     .cardWater {
-        background-color: rgb(16, 129, 163);
+        background-color: #1E90FF;
     }
 

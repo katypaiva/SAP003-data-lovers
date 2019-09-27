@@ -11,11 +11,11 @@ function sortData(data, sortBy, sortOrder) {
     return a[sortBy] > b[sortBy] ? 1 : a[sortBy] < b[sortBy] ? -1 : 0;
   };
 
-  if (sortOrder === "ascendingOrder") {
+  if (sortOrder === "ascendingOrder" || sortOrder === "ascendingFilterOrder") {
     return data.sort(orderAZ);
-  } else if (sortOrder === "descendingOrder") {
+  } else if (sortOrder === "descendingOrder" || sortOrder === "descendingFilterOrder") {
     return data.reverse(data.sort(orderAZ));
-  };
+  } 
 }
 
 function computers(data) {

@@ -5,6 +5,7 @@ const btnOrder = document.getElementById("btn-order");
 const calc = document.getElementById("result");
 const searchText = document.getElementById("searchtxt");
 const searchBtn = document.getElementById("btn-search");
+const filterOdr = document.getElementsByClassName("filterOrder");
 
 function menuTypes(data) {
   let arrTypes = [];
@@ -28,7 +29,7 @@ searchText.addEventListener("keydown", (event) => {
     main.innerHTML = "";
     return template(window.app.filterName(pokemonData, searchText.value));
   }
-})
+});
 
 searchBtn.addEventListener("click", () => {
   main.innerHTML = "";
@@ -36,14 +37,20 @@ searchBtn.addEventListener("click", () => {
 });
 
 btnOrder.addEventListener("change", () => {
-  main.innerHTML = "";
-  template(window.app.sortData(pokemonData, "name", btnOrder.value));
+  if (btnOrder.value === "ascendingOrder" || btnOrder.value === "descendingOrder") {
+    main.innerHTML = "";
+    return template(window.app.sortData(pokemonData, "name", btnOrder.value));
+
+  } else {
+    main.innerHTML = "";
+    return template(window.app.sortData(window.app.filterData(pokemonData, btnType.value), "name", btnOrder.value));
+  }
 });
 
 btnType.addEventListener("change", () => {
   main.innerHTML = "";
   template(window.app.filterData(pokemonData, btnType.value)),
-    calc.innerHTML = `There are ${window.app.computers(window.app.filterData(pokemonData, btnType.value))}% ${btnType.value} type among 151 pokemons.`;
+  calc.innerHTML = `There are ${window.app.computers(window.app.filterData(pokemonData, btnType.value))}% ${btnType.value} type among 151 pokemons.`;
 });
 
 window.onload = () => {
