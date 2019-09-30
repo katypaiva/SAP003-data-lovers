@@ -37,7 +37,7 @@ Ricardo, 26 anos, designer, jogador de Pokemon Go.
 
 **Critérios de Aceitação:** Um menu na qual é possível listar por tipos e imprimir na tela, somente o que o usuário esta pesquisando.
 
-Felipe, 24 anos, auxiliar administrativo, classe.
+Felipe, 24 anos, auxiliar administrativo, classe C.
 
 "Eu gostaria de pesquisar os pokemons por nome, não gosto de olhar uma lista."
 **Critérios de Aceitação:** Implementado um menu que filtra a partir do nome digitado.
