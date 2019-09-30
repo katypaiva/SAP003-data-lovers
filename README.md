@@ -40,11 +40,13 @@ Ricardo, 26 anos, designer, jogador de Pokemon Go.
 Felipe, 24 anos, auxiliar administrativo, classe C.
 
 "Eu gostaria de pesquisar os pokemons por nome, não gosto de olhar uma lista."
+
 **Critérios de Aceitação:** Implementado um menu que filtra a partir do nome digitado.
 
 Jackeline, 25 anos, aluna do Laboratoria, fez o teste de usabilidade.
 
 "Achei confusa a disposição do filtro com a ordenação, parece que ele filtra e já ordena."
+
 **Critérios de Aceitação:** Inserida mais 2 opções de ordenação, sendo assim pode ordenar tudo de AZ ou o a partir do filtro escolhido de AZ.
 
 **Definição de pronto:** O código esta de acordo com o guia dos estilos. Código no repositório. Passa nos testes unitários. História implementada com 1 usuário.
